@@ -1,4 +1,7 @@
-﻿body {
+﻿
+body{
+    background-image: url("/Images/background.png");
+    background-repeat;
 }
 h1.main{
     text-align: center;
