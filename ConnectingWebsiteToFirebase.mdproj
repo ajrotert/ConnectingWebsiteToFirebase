@@ -11,5 +11,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="index.html" />
+    <None Include="Scripts\ClickEvents.js" />
+    <None Include="Scripts\Connection.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
 </Project>

@@ -10,112 +10,30 @@
 <body>
 
     <pre id='object'></pre>
+    <br />
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname"><br />
+        Email:<br>
+        <input type="text" name="email"><br />
+        Username:<br>
+        <input type="text" name="username"><br>
+        Password:<br>
+        <input type="text" name="password"><br />
+    </form>
 
-    <script>
-        (function () {
-    // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAm7Mmd1nnzDxnsiG5mmMDvF1ACz3Pp3UA",
-            authDomain: "connectwebpagetofirebase.firebaseapp.com",
-            databaseURL: "https://connectwebpagetofirebase.firebaseio.com",
-            projectId: "connectwebpagetofirebase",
-            storageBucket: "connectwebpagetofirebase.appspot.com",
-            messagingSenderId: "169507978975",
-            appId: "1:169507978975:web:dd12cf0390b8188c0a336a",
-            measurementId: "G-VM4FQ6EBQV"
-        };
-        // Initialize Firebase
+    <br />
+    <button id="user-button" type="button" onclick="">Add New User</button>
+    <br />
 
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-
-
-        //Data Object Change Listener
-
-            const preObject = document.getElementById('object');
-
-            //const dbRefObject = firebase.database().ref().child('object');
-
-            const dbRefObject = firebase.database().ref();
-
-
-        //const db = firebase.database().getElementById('object');
-
-        /*db.on('value', snap => {
-            console.log(snap.val());
-            preObject.innerText = JSON.stringify(snap.val(), null, 3);
-        }, function (error) {
-            console.error(error);
-        });*/
-
-        dbRefObject.on('value', snap => {
-
-            console.log(snap.val());
-            preObject.innerText = JSON.stringify(snap.val(), null, 3);
-
-        }, function (error) {
-            // The fetch failed.
-
-                console.error(error);
-        });
-        }());
-    </script>
     <button id="test-button" type="button" onclick="">Add Random Data</button>
     <button id="delete-button" type="button" onclick="">Delete All Data</button>
 
-    <br />
-    <br />
-    <pre id='object'></pre>
 
+    <script src="Scripts/Connection.js"></script>
+    <script src="Scripts/ClickEvents.js"></script>
 
-    <script>document.getElementById("test-button").onclick = function () {
-            firebase.database().ref('users/' + "{First_Name Last_Name}").set({
-                email: "Email",
-                username: "Username",
-                password: "Password"
-            });
-        }</script>
-
-    <script>document.getElementById("delete-button").onclick = function () {
-    firebase.database().ref().remove();
-        }</script>
-
-    <script>(function () {
-            // Your web app's Firebase configuration
-
-            var firebaseConfig = {
-                apiKey: "AIzaSyAm7Mmd1nnzDxnsiG5mmMDvF1ACz3Pp3UA",
-                authDomain: "connectwebpagetofirebase.firebaseapp.com",
-                databaseURL: "https://connectwebpagetofirebase.firebaseio.com",
-                projectId: "connectwebpagetofirebase",
-                storageBucket: "connectwebpagetofirebase.appspot.com",
-                messagingSenderId: "169507978975",
-                appId: "1:169507978975:web:dd12cf0390b8188c0a336a",
-                measurementId: "G-VM4FQ6EBQV"
-            };
-            // Initialize Firebase
-
-            firebase.initializeApp(firebaseConfig);
-            firebase.analytics();
-
-
-            //Data Object Change Listener
-
-            const preObject = document.getElementById('object');
-
-            const dbRefObject = firebase.database().ref();
-
-
-            dbRefObject.on('value', snap => {
-
-                console.log(snap.val());
-                preObject.innerText = JSON.stringify(snap.val(), null, 3);
-
-            }, function (error) {
-                // The fetch failed.
-
-                console.error(error);
-            });
-        }());</script>
 </body>
 </html>
