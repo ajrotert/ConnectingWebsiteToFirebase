@@ -12,18 +12,20 @@ document.getElementById("delete-button").onclick = function () {
 }
 
 document.getElementById("user-button").onclick = function () {
-    var fn = document.getElementsByName("firstname").values;
-    var ln = document.getElementsByName("lastname").values;
-    var em = document.getElementsByName("email").values;
-    var user = document.getElementsByName("username").values;
-    var pass = document.getElementsByName("password").values;
+    var fn = document.getElementById("firstname").value;
+    var ln = document.getElementById("lastname").value;
+    var em = document.getElementById("email").value;
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
 
-    //broken
+    if (fn != "" && ln != "" && em != "" && user != "" && pass != "")
+    {
+        firebase.database().ref('users/' + fn + "_" + ln).set({
+            email: em,
+            username: user,
+            password: pass
+        });
+    }
 
-    firebase.database().ref('users/' + fn+"_"+ln).set({
-        email: em,
-        username: user,
-        password: pass
-    });
-
+    document.getElementById("user-form").reset();
 }

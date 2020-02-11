@@ -13,8 +13,12 @@
     <None Include="index.html" />
     <None Include="Scripts\ClickEvents.js" />
     <None Include="Scripts\Connection.js" />
+    <None Include="Styles\default.css" />
+    <None Include="Images\ARLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />
+    <Folder Include="Styles\" />
+    <Folder Include="Images\" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,29 @@
+﻿body {
+}
+h1.main{
+    text-align: center;
+}
+.right_position {
+    right: 0;
+    margin: 0%;
+    text-align: right;
+}
+figure.main{
+    font-style: italic;
+    font-size: 1vw;
+    background-color: lightgray;
+    padding-top: .25vw;
+    padding-bottom: .25vw;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+form {
+    display: inline-block;
+    background-color: #454545;
+    color: white;
+    padding: .5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
