@@ -16,14 +16,14 @@ h1.main {
 }
 figure.main{
     font-style: italic;
-    font-size: 1vw;
+    font-size: 110%;
     background-color: lightgray;
-    padding-top: .25vw;
-    padding-bottom: .25vw;
+    padding-top: 2px;
+    padding-bottom: 2px;
     margin-left: 40%;
     margin-right: 40%;
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 1%;
 }
 form {
     display: inline-block;
