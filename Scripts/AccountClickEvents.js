@@ -6,7 +6,7 @@
     var pass = document.getElementById("password").value;
 
     if (fn != "" && ln != "" && em != "" && user != "" && pass != "") {
-        firebase.database().ref('users/' + user).set({
+        firebase.database().ref('Content/' + user).set({
             email: em,
             firstname: fn,
             lastname: ln,

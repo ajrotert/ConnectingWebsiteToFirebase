@@ -1,22 +1,31 @@
-﻿document.getElementById("login-button").onclick = function () {
+﻿document.getElementById("start-button").onclick = function () {
     var user = document.getElementById("username").value;
-    var pass = document.getElementById("password").value;
+    var pass = document.getElementById("name").value;
 
-    /*if (user != "" && pass != "") {
-        firebase.database().ref('users/' + user).once('value').then(function (snapshot) {
-            var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-            // ...
-        });
-    }*/
-    var passed = true;
+    //May be used for some kind of authentication later on
+
+    var passed = false;
+
+
+    if (user != "" && pass != "") {
+        user_info.username = user;
+        user_info.pass = pass;
+        passed = true;
+    }
 
     if (passed) {
+
         window.location.href = "./main.html";
     }
 
     document.getElementById("user-form").reset();
 
 }
-document.getElementById("create-button").onclick = function () {
-    window.location.href = "./CreateAccount.html";
-}
+
+var today = new Date();
+var time = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+var user_info = {
+    username: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(),
+    name: "Guest User"
+};

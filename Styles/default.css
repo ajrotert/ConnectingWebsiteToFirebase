@@ -1,10 +1,12 @@
 ﻿
-body{
+body {
     background-image: url("../Images/background.png");
     background-repeat: repeat;
+    border: solid 5px #022E6D;
 }
-h1.main{
+h1.main {
     text-align: center;
+    color: #022E6D;
 }
 .right_position {
     right: 0;
@@ -29,4 +31,72 @@ form {
     padding: .5vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-top: 2%;
+    margin-bottom: .5%;
+}
+input {
+    color: black;
+}
+.button {
+    background-color: #022E6D;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+.button:hover {
+    background-color: #0066ff;
+}
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resize {
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 200%;
+}
+h1.index {
+    color: white;
+    font-size: 400%;
+}
+h2.index {
+    color: white;
+    font-size: 200%;
+}
+.main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div.main > object > p {
+    font-size: 165%;
+}
+div.main > object > h1 {
+    color: #022E6D;
+}
+div.main > object > h2 {
+    font-size: 175%;
+}
+#disclaimer{
+    color: red;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+div#disclaimer > ul{
+    text-align: left;
 }

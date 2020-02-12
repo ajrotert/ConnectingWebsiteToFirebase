@@ -16,7 +16,7 @@
     <None Include="Styles\default.css" />
     <None Include="Images\ARLogo.png" />
     <None Include="Images\background.png" />
-    <None Include="CreateAccount.html" />
+    <None Include="Account.html" />
     <None Include="Scripts\AuthAcct.js" />
     <None Include="main.html" />
     <None Include="Scripts\Updater.js" />
@@ -24,11 +24,19 @@
     <None Include="Navigation\NavigationBarJS.js" />
     <None Include="Navigation\NavigationBar.html" />
     <None Include="Navigation\NavBar.js" />
+    <None Include="Styles\normalize.css" />
+    <None Include="Images\FireChatLogo.png" />
+    <None Include="Images\ServersBackground2.png" />
+    <None Include="Dynamic\HTML\About.html" />
+    <None Include="Dynamic\HTML\PrivacyPolicy.html" />
+    <None Include="Dynamic\InformationLoader.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />
     <Folder Include="Styles\" />
     <Folder Include="Images\" />
     <Folder Include="Navigation\" />
+    <Folder Include="Dynamic\" />
+    <Folder Include="Dynamic\HTML\" />
   </ItemGroup>
 </Project>

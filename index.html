@@ -6,30 +6,48 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <meta charset="utf-8" />
-    <title>Firebase Demo Website | Home</title>
+    <title>FireChat | Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/FireChatLogo.png" />
+    <link rel="shortcut icon" href="Images/FireChatLogo.png" />
 
+    <link href="Styles/normalize.css" rel="stylesheet" />
     <link href="Styles/default.css" rel="stylesheet" />
+
 </head>
 <body>
     <nav id="nav-placeholder"></nav>
 
-    <h1 class="main">Live Database View</h1>
+    <div class="container">
+        <img src="Images/ServersBackground2.png" alt="Landing Image" class="resize" />
+        <div class="centered">
+            <h1 class="index">Offical Website of FireChat</h1>
+            <h2 class="index">Runs on a Realtime Firebase database.</h2>
+        </div>
+    </div>
+
+    <br />
+    <h1 class="main">Live FireChat Access</h1>
     <br />
 
     <center>
         <form id="user-form">
             Username:<br>
             <input type="text" name="username" id="username" placeholder="Username"><br>
-            Password:<br>
-            <input type="text" name="password" id="password" placeholder="Last Name"><br />
+            Name:<br>
+            <input type="text" name="name" id="name" placeholder="Your Name"><br />
         </form>
 
         <br />
 
-        <button id="login-button" type="button" onclick="">Login</button>
-        <button id="create-button" type="button" onclick="">Create Account</button>
+        <button id="start-button" type="button" class="button" onclick="">Begin Now</button>
 
     </center>
+
+    <div class="main">
+        <object id="About-placeholder"></object>
+        <br />
+        <object id="Privacy-placeholder"></object>
+    </div>
 
     <footer>
         <div class="right_position">
@@ -44,6 +62,7 @@
     <script src="Navigation/NavBar.js"></script>
     <script src="Scripts/Connection.js"></script>
     <script src="Scripts/AuthAcct.js"></script>
+    <script src="Dynamic/InformationLoader.js"></script>
 
 </body>
 </html>

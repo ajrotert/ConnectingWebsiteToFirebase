@@ -73,10 +73,15 @@
         width: 90%;
         z-index: 1;
     }
-
-    .container {
-        position: relative;
-        text-align: center;
+    .pad{
+        padding-left: 61px;
+    }
+    img.logo {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 60px;
     }
 </style>
 
@@ -109,17 +114,17 @@
                 </div>
         </li>
 -->
-
+<img src="Images/FireChatLogo.png" class="logo" />
 <nav id="nav-placeholder">
     <ul class="nav">
-        <li class="navitem" id="Home-Page"><a href="index.html">Home</a></li>
+        <li class="navitem pad" id="Home-Page"><a href="index.html">Home</a></li>
         <li class="dropdown navitem" id="Main-Page">
             <a href="javascript:void(0)" class="dropbtn">Realtime Viewer</a>
             <div class="dropdown-content">
                 <a href="main.html">Main</a>
             </div>
         </li>
-        <li class="navitem" id="Account-Page"><a href="CreateAccount.html">Account</a></li>
+        <li class="navitem" id="Account-Page"><a href="Account.html">Account</a></li>
     </ul>
 </nav>
 
