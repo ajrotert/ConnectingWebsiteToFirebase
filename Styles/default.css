@@ -3,6 +3,7 @@ body {
     background-image: url("../Images/background.png");
     background-repeat: repeat;
     border: solid 5px #022E6D;
+    border-radius: 0;
 }
 h1.main {
     text-align: center;

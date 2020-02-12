@@ -26,10 +26,10 @@
     <None Include="Navigation\NavBar.js" />
     <None Include="Styles\normalize.css" />
     <None Include="Images\FireChatLogo.png" />
-    <None Include="Images\ServersBackground2.png" />
     <None Include="Dynamic\HTML\About.html" />
     <None Include="Dynamic\HTML\PrivacyPolicy.html" />
     <None Include="Dynamic\InformationLoader.js" />
+    <None Include="Images\ServersImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />
