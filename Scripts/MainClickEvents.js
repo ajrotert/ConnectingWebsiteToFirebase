@@ -1,8 +1,13 @@
 ﻿document.getElementById("test-button").onclick = function () {
-    firebase.database().ref('users/' + "{First_Name Last_Name}").set({
-        email: "Email",
-        username: "Username",
-        password: "Password"
+
+    var today = new Date();
+    var time = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    firebase.database().ref('users/' + time).set({
+        email: "null",
+        firstname: "null",
+        lastname: "null",
+        password: "null"
     });
 
 }
@@ -20,12 +25,15 @@ document.getElementById("user-button").onclick = function () {
 
     if (fn != "" && ln != "" && em != "" && user != "" && pass != "")
     {
-        firebase.database().ref('users/' + fn + "_" + ln).set({
+        firebase.database().ref('users/' + user).set({
             email: em,
-            username: user,
+            firstname: fn,
+            lastname: ln,
             password: pass
         });
     }
 
     document.getElementById("user-form").reset();
+
 }
+

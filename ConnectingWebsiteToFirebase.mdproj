@@ -11,15 +11,24 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="index.html" />
-    <None Include="Scripts\ClickEvents.js" />
+    <None Include="Scripts\MainClickEvents.js" />
     <None Include="Scripts\Connection.js" />
     <None Include="Styles\default.css" />
     <None Include="Images\ARLogo.png" />
     <None Include="Images\background.png" />
+    <None Include="CreateAccount.html" />
+    <None Include="Scripts\AuthAcct.js" />
+    <None Include="main.html" />
+    <None Include="Scripts\Updater.js" />
+    <None Include="Scripts\AccountClickEvents.js" />
+    <None Include="Navigation\NavigationBarJS.js" />
+    <None Include="Navigation\NavigationBar.html" />
+    <None Include="Navigation\NavBar.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />
     <Folder Include="Styles\" />
     <Folder Include="Images\" />
+    <Folder Include="Navigation\" />
   </ItemGroup>
 </Project>
