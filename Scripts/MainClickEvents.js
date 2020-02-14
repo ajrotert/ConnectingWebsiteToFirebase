@@ -6,6 +6,7 @@
     var message = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
     firebase.database().ref('Content/' + title).set({
+        title: title,
         message: message
     });
 
@@ -22,6 +23,7 @@ document.getElementById("sub-button").onclick = function () {
     if (title != "" && message != "")
     {
         firebase.database().ref('Content/' + title).set({
+            title: title,
             message: message
         });
     }
