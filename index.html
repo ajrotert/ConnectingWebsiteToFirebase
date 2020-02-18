@@ -16,41 +16,43 @@
 
     <link href="Styles/normalize.css" rel="stylesheet" />
     <link href="Styles/default.css" rel="stylesheet" />
+    <link href="Styles/IndexLayout.css" rel="stylesheet" />
 
 </head>
 <body>
     <nav id="nav-placeholder"></nav>
 
-    <div class="container">
-        <img src="Images/ServersImage.png" alt="Landing Image" class="resize" />
-        <div class="centered">
-            <h1 class="index">Offical Website of FireChat</h1>
-            <h2 class="index">Runs on a Realtime Firebase database.</h2>
+    <div class="grid-container">
+
+        <header class="container" id="heading">
+            <img src="Images/ServersImage.png" alt="Landing Image" class="full-width" />
+            <div class="centered">
+                <h1 class="index">Offical Website of FireChat</h1>
+                <h2 class="index">Runs on a Realtime Firebase database.</h2>
+            </div>
+        </header>
+
+        <main id="access">
+            <h1 class="main">Live FireChat Access</h1>
+            <center>
+                <form id="user-form">
+                    Username:<br>
+                    <input type="text" name="username" id="username" placeholder="Username"><br>
+                    Name:<br>
+                    <input type="text" name="name" id="name" placeholder="Your Name"><br />
+                </form>
+                <br />
+                <button id="start-button" type="button" class="button" onclick="">Begin Now</button>
+
+            </center>
+        </main>
+        <div class="main" id="about"> 
+            <object id="About-placeholder"></object>
         </div>
-    </div>
+        <div class="main" id="policy">
+            <object id="Privacy-placeholder"></object>
+        </div>
 
-    <br />
-    <h1 class="main">Live FireChat Access</h1>
-    <br />
-
-    <center>
-        <form id="user-form">
-            Username:<br>
-            <input type="text" name="username" id="username" placeholder="Username"><br>
-            Name:<br>
-            <input type="text" name="name" id="name" placeholder="Your Name"><br />
-        </form>
-
-        <br />
-
-        <button id="start-button" type="button" class="button" onclick="">Begin Now</button>
-
-    </center>
-
-    <div class="main">
-        <object id="About-placeholder"></object>
-        <br />
-        <object id="Privacy-placeholder"></object>
     </div>
 
     <footer>

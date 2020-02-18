@@ -1,0 +1,47 @@
+﻿/*********************** Grid Layout ***************************/
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto 2fr 2fr;
+    grid-template-areas: 'header' 'database' 'disclaimer' 'submit';
+}
+
+#heading {
+    grid-area: header;
+}
+
+#database {
+    grid-area: database;
+}
+
+#disc {
+    grid-area: disclaimer;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+/*********************** Main Styles ***************************/
+.main_obj {
+    font-size: 135%;
+    background-color: lightgray;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+}
+
+#disclaimer {
+    color: red;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+div#disclaimer > ul {
+    text-align: left;
+}

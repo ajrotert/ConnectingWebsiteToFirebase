@@ -30,6 +30,8 @@
     <None Include="Dynamic\HTML\PrivacyPolicy.html" />
     <None Include="Dynamic\InformationLoader.js" />
     <None Include="Images\ServersImage.png" />
+    <None Include="Styles\IndexLayout.css" />
+    <None Include="Styles\MainLayout.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />

@@ -7,6 +7,7 @@
 
     <link href="Styles/normalize.css" rel="stylesheet" />
     <link href="Styles/default.css" rel="stylesheet" />
+    <link href="Styles/MainLayout.css" rel="stylesheet" />
 
     <meta charset="utf-8" />
     <meta name="description" content="Personal project focusing on web application design, and database management systems.">
@@ -22,37 +23,42 @@
 
     <nav id="nav-placeholder"></nav>
 
-    <h1 class="main">Live Database View</h1>
-    <!--Figure will show the database-->
-    <pre class="main_obj" id='object'></pre>
-    <br />
+    <div class="grid-container">
+        <header id="heading">
+            <h1 class="main">Live Database View</h1>
+        </header>
+        <main id="database">
+            <!--Figure will show the database-->
+            <pre class="main_obj" id='object'></pre>
+        </main>
 
-    <div id="disclaimer">
-        <p>**Note to use this feature you state the following: </p>
-        <ul>
-            <li>I am older than 13</li>
-            <li>I am older than 16</li>
-            <li>I do NOT live in California</li>
-        </ul>
+        <div id="disc">
+            <div id="disclaimer">
+                <p>**Note to use this feature you state the following: </p>
+                <ul>
+                    <li>I am older than 13</li>
+                    <li>I am older than 16</li>
+                    <li>I do NOT live in California</li>
+                </ul>
+            </div>
+        </div>
+
+        <center id="submit">
+            <form id="user-form">
+                Title: <br>
+                <input type="text" name="title" id="title" placeholder="Title"><br>
+                Message:<br>
+                <input type="text" name="message" id="message" placeholder="Message..."><br>
+            </form>
+
+            <br />
+
+            <button id="sub-button" type="button" class="button" onclick="">Submit</button>
+
+            <button id="test-button" type="button" class="button" onclick="">Add Random Data</button>
+            <button id="delete-button" type="button" class="button" onclick="">Delete All Data</button>
+        </center>
     </div>
-
-    <br />
-    <center>
-        <form id="user-form">
-            Title: <br>
-            <input type="text" name="title" id="title" placeholder="Title"><br>
-            Message:<br>
-            <input type="text" name="message" id="message" placeholder="Message..."><br>
-        </form>
-
-        <br />
-
-        <button id="sub-button" type="button" onclick="">Submit</button>
-
-        <button id="test-button" type="button" onclick="">Add Random Data</button>
-        <button id="delete-button" type="button" onclick="">Delete All Data</button>
-    </center>
-
     <footer>
         <div class="right_position">
             <img src="Images/ARLogo.png" height="150" alt="Andrew Rotert Development Logo" />
