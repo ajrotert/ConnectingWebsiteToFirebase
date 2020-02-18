@@ -1,8 +1,19 @@
-﻿/*********************** Grid Layout ***************************/
+﻿/*********************** Mobile Layout ***************************/
+@media screen and (max-width: 1000px) {
+    .main_obj {
+        font-size: 185%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #disclaimer{
+        font-size: 170%;
+    }
+}
+/*********************** Grid Layout ***************************/
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr auto 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 'header' 'database' 'disclaimer' 'submit';
 }
 

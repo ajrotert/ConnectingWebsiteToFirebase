@@ -1,4 +1,9 @@
-﻿
+﻿/*********************** Mobile Layout ***************************/
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 250%;
+    }
+}
 /*********************** Universal Styles ***************************/
 body {
     background-image: url("../Images/background.png");
