@@ -67,3 +67,18 @@ div.main > object > ul{
 .full-width {
     width: 100%;
 }
+/*********************** Mobile Layout ***************************/
+@media screen and (max-width: 1000px) {
+
+    div.main > object > p {
+        font-size: 200%;
+    }
+
+    div.main > object > h2 {
+        font-size: 225%;
+    }
+
+    div.main > object > ul {
+        font-size: 175%;
+    }
+}
