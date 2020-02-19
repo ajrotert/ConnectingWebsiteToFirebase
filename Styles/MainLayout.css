@@ -41,6 +41,10 @@
 div#disclaimer > ul {
     text-align: left;
 }
+.form-container {
+    margin-left: 2.5%;
+    margin-right: 0%;
+}
 
 /*********************** Mobile Layout ***************************/
 @media screen and (max-width: 1000px) {
