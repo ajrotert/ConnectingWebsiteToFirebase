@@ -3,15 +3,13 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-        'header'
-        'access'
-        'about'
-        'policy';
+    grid-template-areas: 'header' 'about' 'access' 'policy';
 }
+
 #heading{
     grid-area: header;
 }
+
 #about{
     grid-area: about;
 }
@@ -53,19 +51,41 @@ div.main > object > ul{
 }
 
 .container {
-    position: relative;
-    text-align: center;
-}
-
-.centered {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 25%;
+    width: 100%;
+
+}
+.recolor {
+    color: white !Important;
 }
 
 .full-width {
     width: 100%;
+}
+.parallax1 {
+    min-height: 100vh;
+    background-image: url("../Images/ServersImage.png");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10%;
+}
+.parallax2 {
+    min-height: 100%;
+    background-image: url("../Images/server1.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 /*********************** Mobile Layout ***************************/
 @media screen and (max-width: 1000px) {

@@ -32,6 +32,7 @@
     <None Include="Images\ServersImage.png" />
     <None Include="Styles\IndexLayout.css" />
     <None Include="Styles\MainLayout.css" />
+    <None Include="Images\server1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\" />

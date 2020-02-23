@@ -7,6 +7,7 @@ body {
     background-repeat: repeat;
     border: solid 5px #022E6D;
     border-radius: 0px;
+    min-height: 100vh;
 }
 h1.main {
     text-align: center;
@@ -21,7 +22,6 @@ h1{
     text-align: center;
     font-size: 200%;
 }
-
 /*********************** Form Styles ***************************/
 .form-container {
     margin-left: 20%;

@@ -60,4 +60,7 @@ div#disclaimer > ul {
     #disclaimer {
         font-size: 170%;
     }
+    .form-container{
+        margin-right: 2.5%;
+    }
 }
