@@ -20,7 +20,7 @@
     <None Include="Scripts\AuthAcct.js" />
     <None Include="main.html" />
     <None Include="Scripts\Updater.js" />
-    <None Include="Scripts\AccountClickEvents.js" />
+    <None Include="Scripts\AccountEvents.js" />
     <None Include="Navigation\NavigationBarJS.js" />
     <None Include="Navigation\NavigationBar.html" />
     <None Include="Navigation\NavBar.js" />

@@ -3,7 +3,7 @@
 
 const preObject = document.getElementById('object');
 
-const dbRefObject = firebase.database().ref();
+const dbRefObject = firebase.database().ref('Content/');
 
 
 dbRefObject.on('value', snap => {
