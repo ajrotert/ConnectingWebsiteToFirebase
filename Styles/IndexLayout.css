@@ -133,7 +133,6 @@ div.main > object > ul{
         font-size: 175%;
     }
     .parallax1, .parallax2 {
-        background-repeat: repeat-y;
         background-size: contain;
         margin-bottom: 1%;
         margin-top: 1%;
