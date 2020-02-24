@@ -144,7 +144,16 @@
 <img src="Images/FireChatLogo.png" class="logo" />
 <nav id="nav-placeholder">
     <ul class="nav">
-        <li class="navitem pad" id="Home-Page"><a href="index.html">Home</a></li>
+        <li class="navitem pad dropdown" id="Home-Page">
+            <a href="index.html" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+                <a href="#">Top</a>
+                <a href="index.html#about-plc">About</a>
+                <a href="index.html#access-plc">Access</a>
+                <a href="index.html#privacy-plc">Privacy</a>
+                <a href="index.html#contact-plc">Contact</a>
+            </div>
+        </li>
         <li class="dropdown navitem" id="Main-Page">
             <a href="javascript:void(0)" class="dropbtn">Realtime Viewer</a>
             <div class="dropdown-content">
@@ -152,6 +161,7 @@
             </div>
         </li>
         <li class="navitem" id="Account-Page"><a href="Account.html">Account</a></li>
+        <li class="navitem" id="Parent" style="float: right !important"><a href="https://DevelopedNotDownloaded.com" target="_blank">Visit Our Parent Website</a></li>
     </ul>
 </nav>
 
