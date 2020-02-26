@@ -4,6 +4,9 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
 
     <meta charset="utf-8" />
     <meta name="description" content="Personal project focusing on web application design, and database management systems.">
@@ -35,16 +38,10 @@
             <div class="parallax2">
                 <object id="access-plc"></object>
                 <h1 class="main recolor">Live FireChat Access</h1>
-                <center class="form-container">
-                    <form id="user-form">
-                        Username:<br>
-                        <input type="text" name="username" id="username" placeholder="Username"><br>
-                        Password:<br>
-                        <input type="text" name="password" id="password" placeholder="Password"><br />
-                    </form>
+                <center>
+                    <center><button class="cbutton" id="start-button" onclick="">Login/Create Account</button></center>
                     <br />
-                    <button id="start-button" type="button" class="button" onclick="">Begin Now</button>
-
+                    <div id="firebaseui-auth-container"></div>
                 </center>
             </div>
         </main>
